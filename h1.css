@@ -1,0 +1,69 @@
+body{
+    background-color: #292b37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+div{
+    /* background-color: aliceblue;   (only for reference) */
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 500px;
+}
+div span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /* background-color: aqua; ( only for reference)*/
+    border-left: 5px   solid  #28e60f ;
+    border-top:10px transparent solid ;
+    border-right: 5px solid #28e60f;
+}
+div span:nth-of-type(1){
+    animation: anime1 2s linear infinite;
+}
+div span:nth-of-type(2){
+    animation: anime2 2s linear infinite;
+}
+div span:nth-of-type(3){
+    animation: anime3 2s linear infinite;
+}
+@keyframes anime1{
+    from{
+        transform:rotateZ(120deg) 
+        rotateX(70deg)
+        rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(120deg)
+        rotateX(70deg)
+        rotateZ(360deg);
+    }
+}
+@keyframes anime2{
+    from{
+        transform:rotateZ(240deg) 
+        rotateX(70deg)
+        rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(240deg)
+        rotateX(70deg)
+        rotateZ(360deg);
+    }
+}
+@keyframes anime3{
+    from{
+        transform:rotateZ(360deg) 
+        rotateX(70deg)
+        rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg)
+        rotateX(70deg)
+        rotateZ(360deg);
+    }
+}
